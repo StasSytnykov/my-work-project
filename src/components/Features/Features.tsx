@@ -1,3 +1,4 @@
+import { FeaturesList } from "./FeaturesList";
 import { Container } from "../Container/Container.styled";
 import {
   FeaturesP,
@@ -19,5 +20,6 @@ export const Features = () => (
         </FeaturesDesc>
       </FeaturesThumb>
     </FeaturesSectionStyled>
+    <FeaturesList />
   </Container>
 );

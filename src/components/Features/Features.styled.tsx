@@ -23,10 +23,12 @@ export const FeaturesTitle = styled.h1`
   font-size: 46px;
   line-height: 1.19;
   color: #202731;
+  margin-bottom: 24px;
 `;
 
 export const FeaturesDesc = styled.p`
   font-size: 16px;
   line-height: 1.4;
   color: rgba(32, 39, 49, 0.75);
+  margin-bottom: 49px;
 `;

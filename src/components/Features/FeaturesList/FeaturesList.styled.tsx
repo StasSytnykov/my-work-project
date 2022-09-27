@@ -7,9 +7,10 @@ export const FeaturesListStyled = styled.ul`
 `;
 
 export const FeaturesItemStyled = styled.li`
+  position: relative;
   width: 360px;
   height: 318px;
-  padding: 0 30px;
+  padding: 30px 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
@@ -20,6 +21,8 @@ export const FeaturesItemTitle = styled.h3`
   font-size: 26px;
   line-height: 1.19;
   color: #202731;
+
+  margin-top: 96px;
 `;
 
 export const FeaturesItemText = styled.p`
@@ -37,4 +40,10 @@ export const FeaturesItemText = styled.p`
     width: 80px;
     margin-bottom: 25px;
   }
+`;
+
+export const FeaturesItemSvg = styled.svg`
+  position: absolute;
+  top: 30px;
+  right: 30px;
 `;

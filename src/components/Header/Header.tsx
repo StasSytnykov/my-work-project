@@ -1,7 +1,10 @@
-import {Logo} from "../Logo"
-import {List} from './Nav'
+import { Logo } from "../Logo";
+import { Nav } from "./Nav";
+import { HeaderStyled } from "./Header.styled";
 
-export const Header = () => <header>
-    <Logo/>
-    <List/>
-</header>
+export const Header = () => (
+  <HeaderStyled>
+    <Logo />
+    <Nav />
+  </HeaderStyled>
+);

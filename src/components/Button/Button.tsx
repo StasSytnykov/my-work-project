@@ -1,5 +1,9 @@
-type ButtonProps = {
-    text: string;
-}
+import { ButtonStyled } from "./Button.styled";
 
-export const Button = ({text}: ButtonProps) => <button type="button">{text}</button>
+type ButtonProps = {
+  text: string;
+};
+
+export const Button = ({ text }: ButtonProps) => (
+  <ButtonStyled type="button">{text}</ButtonStyled>
+);

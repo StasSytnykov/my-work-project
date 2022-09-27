@@ -9,18 +9,20 @@ import {
 } from "./Hero.styled";
 import { HeroButton } from "../Buttons/Buttons";
 import heroImg from "../../images/hero-img.png";
-
 export const Hero = () => (
   <HeroSection>
-    <HeroThumb>
-      <HeroText>Your Business Superhero</HeroText>
-      <HeroTitle>Time is money, reviews is a growing business</HeroTitle>
-      <HeroDesc>
-        The best tool for user satisfaction research, feedback, market research
-        and analytics.
-      </HeroDesc>
-      <HeroButton text={"try now"} />
-    </HeroThumb>
-    <HeroImg src={heroImg} alt={"Work example"} />
+    <Container>
+      <HeroThumb>
+        <HeroText>Your Business Superhero</HeroText>
+        <HeroTitle>Time is money, reviews is a growing business</HeroTitle>
+        <HeroDesc>
+          The best tool for user satisfaction research, feedback, market
+          research and analytics.
+        </HeroDesc>
+        <HeroButton text={"try now"} />
+      </HeroThumb>
+    </Container>
+
+    {/*<HeroImg src={heroImg} alt={"Work example"} />*/}
   </HeroSection>
 );

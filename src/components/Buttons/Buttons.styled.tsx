@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
+  position: absolute;
+  right: 60px;
+
   background: linear-gradient(93.31deg, #006ad8 1.67%, #01acb4 98.59%),
     rgba(196, 196, 196, 0.05);
   backdrop-filter: blur(18.5px);

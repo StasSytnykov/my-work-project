@@ -7,7 +7,6 @@ export const NavStyled = styled.nav`
 export const NavList = styled.ul`
   display: flex;
   align-items: center;
-  margin-right: 117px;
 `;
 
 export const NavItem = styled.li`

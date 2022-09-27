@@ -24,3 +24,13 @@ export const ButtonStyled = styled.button`
     cursor: pointer;
   }
 `;
+
+export const HeroButtonStyled = styled(ButtonStyled)`
+  width: 142px;
+  height: 50px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+`;

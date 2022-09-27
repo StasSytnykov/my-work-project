@@ -1,4 +1,4 @@
-import { Button } from "../../Button";
+import { HeaderButton } from "../../Buttons/Buttons";
 import { NavStyled, NavList, NavItem, NavLink } from "./Nav.styled";
 
 export const Nav = () => (
@@ -14,6 +14,6 @@ export const Nav = () => (
         <NavLink href={"#"}>Blog</NavLink>
       </NavItem>
     </NavList>
-    <Button text={"Register"} />
+    <HeaderButton text={"Register"} />
   </NavStyled>
 );

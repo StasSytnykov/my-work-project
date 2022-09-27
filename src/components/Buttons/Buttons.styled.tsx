@@ -29,6 +29,8 @@ export const ButtonStyled = styled.button`
 `;
 
 export const HeroButtonStyled = styled(ButtonStyled)`
+  position: static;
+
   width: 142px;
   height: 50px;
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeroSection = styled.section`
+  position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 150px;
@@ -36,4 +37,8 @@ export const HeroDesc = styled.p`
   margin-bottom: 55px;
 `;
 
-export const HeroImg = styled.img``;
+export const HeroImg = styled.img`
+  position: absolute;
+  top: -25px;
+  right: 60px;
+`;

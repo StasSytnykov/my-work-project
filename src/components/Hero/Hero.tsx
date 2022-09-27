@@ -23,6 +23,6 @@ export const Hero = () => (
       </HeroThumb>
     </Container>
 
-    {/*<HeroImg src={heroImg} alt={"Work example"} />*/}
+    <HeroImg src={heroImg} alt={"Work example"} />
   </HeroSection>
 );

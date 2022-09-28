@@ -21,8 +21,7 @@ export const Hero = () => (
         </HeroDesc>
         <HeroButton text={"try now"} />
       </HeroThumb>
+      <HeroImg src={heroImg} alt={"Work example"} />
     </Container>
-
-    <HeroImg src={heroImg} alt={"Work example"} />
   </HeroSection>
 );

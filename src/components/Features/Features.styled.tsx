@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const FeaturesSectionStyled = styled.section`
+export const FeaturesSection = styled.section`
+  margin-bottom: 150px;
+`;
+
+export const FeaturesTextThumb = styled.div`
   display: flex;
 `;
 

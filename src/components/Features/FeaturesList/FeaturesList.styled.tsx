@@ -10,10 +10,14 @@ export const FeaturesItemStyled = styled.li`
   position: relative;
   width: 360px;
   height: 318px;
-  padding: 30px 30px;
+  // padding: 30px 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
+`;
+
+export const FeaturesListContentThumb = styled.div`
+  padding: 30px 30px;
 `;
 
 export const FeaturesItemTitle = styled.h3`

@@ -4,13 +4,13 @@ interface IFeaturesText {
   gap?: boolean;
 }
 
-export const FeaturesListStyled = styled.ul`
+const FeaturesListStyled = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
 `;
 
-export const FeaturesItemStyled = styled.li`
+const FeaturesItemStyled = styled.li`
   position: relative;
   width: 360px;
   height: 318px;
@@ -19,18 +19,18 @@ export const FeaturesItemStyled = styled.li`
   border-radius: 15px;
 `;
 
-export const FeaturesListContentThumb = styled.div`
+const FeaturesListContentThumb = styled.div`
   padding: 96px 30px 0 30px;
 `;
 
-export const FeaturesItemTitle = styled.h3`
+const FeaturesItemTitle = styled.h3`
   font-weight: 500;
   font-size: 26px;
   line-height: 1.19;
   color: #202731;
 `;
 
-export const FeaturesItemText = styled.p<IFeaturesText>`
+const FeaturesItemText = styled.p<IFeaturesText>`
   font-size: 16px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.5);
@@ -46,8 +46,17 @@ export const FeaturesItemText = styled.p<IFeaturesText>`
   }
 `;
 
-export const FeaturesItemSvg = styled.svg`
+const FeaturesItemSvg = styled.svg`
   position: absolute;
   top: 30px;
   right: 30px;
 `;
+
+export {
+  FeaturesListStyled,
+  FeaturesItemStyled,
+  FeaturesListContentThumb,
+  FeaturesItemTitle,
+  FeaturesItemText,
+  FeaturesItemSvg,
+};

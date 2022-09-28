@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-export const NavStyled = styled.nav`
+const NavStyled = styled.nav`
   display: flex;
 `;
 
-export const NavList = styled.ul`
+const NavList = styled.ul`
   display: flex;
   align-items: center;
 `;
 
-export const NavItem = styled.li`
+const NavItem = styled.li`
   font-size: 16px;
   line-height: 1.18;
 
@@ -18,6 +18,8 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLink = styled.a`
+const NavLink = styled.a`
   color: #202731;
 `;
+
+export { NavStyled, NavList, NavItem, NavLink };

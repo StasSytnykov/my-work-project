@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-export const FeaturesSection = styled.section`
+const FeaturesSection = styled.section`
   margin-bottom: 150px;
 `;
 
-export const FeaturesTextThumb = styled.div`
+const FeaturesTextThumb = styled.div`
   display: flex;
 `;
 
-export const FeaturesP = styled.p`
+const FeaturesP = styled.p`
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
@@ -18,11 +18,11 @@ export const FeaturesP = styled.p`
   margin-right: 346px;
 `;
 
-export const FeaturesThumb = styled.div`
+const FeaturesThumb = styled.div`
   width: 570px;
 `;
 
-export const FeaturesTitle = styled.h1`
+const FeaturesTitle = styled.h1`
   font-weight: 600;
   font-size: 46px;
   line-height: 1.19;
@@ -30,9 +30,18 @@ export const FeaturesTitle = styled.h1`
   margin-bottom: 24px;
 `;
 
-export const FeaturesDesc = styled.p`
+const FeaturesDesc = styled.p`
   font-size: 16px;
   line-height: 1.4;
   color: rgba(32, 39, 49, 0.75);
   margin-bottom: 49px;
 `;
+
+export {
+  FeaturesSection,
+  FeaturesTextThumb,
+  FeaturesP,
+  FeaturesThumb,
+  FeaturesTitle,
+  FeaturesDesc,
+};

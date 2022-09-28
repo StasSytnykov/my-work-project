@@ -7,8 +7,9 @@ import {
   HeroImg,
   HeroSection,
 } from "./Hero.styled";
-import { HeroButton } from "../Buttons/Buttons";
+import { HeroButton } from "../Buttons";
 import heroImg from "../../images/hero-img.png";
+
 export const Hero = () => (
   <HeroSection>
     <Container>

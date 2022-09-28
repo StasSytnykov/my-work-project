@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonStyled = styled.button`
+const ButtonStyled = styled.button`
   position: absolute;
   right: 60px;
 
@@ -28,7 +28,7 @@ export const ButtonStyled = styled.button`
   }
 `;
 
-export const HeroButtonStyled = styled(ButtonStyled)`
+const HeroButtonStyled = styled(ButtonStyled)`
   position: static;
 
   width: 142px;
@@ -39,3 +39,5 @@ export const HeroButtonStyled = styled(ButtonStyled)`
   line-height: 1.4;
   text-transform: uppercase;
 `;
+
+export { ButtonStyled, HeroButtonStyled };

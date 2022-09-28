@@ -10,7 +10,6 @@ export const NavList = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.18;
 

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface IFeaturesText {
+  gap?: boolean;
+}
+
 export const FeaturesListStyled = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -26,13 +30,12 @@ export const FeaturesItemTitle = styled.h3`
   color: #202731;
 `;
 
-export const FeaturesItemText = styled.p`
-  font-family: "Gilroy", sans-serif;
+export const FeaturesItemText = styled.p<IFeaturesText>`
   font-size: 16px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.5);
 
-  margin-top: 25px;
+  margin-top: ${(props) => (props.gap ? "23px" : "54px")};
 
   &::before {
     display: block;

@@ -52,7 +52,7 @@ export const FeaturesList = () => (
           <use href={sprite + "#icon-notebook"} />
         </FeaturesItemSvg>
         <FeaturesItemTitle>Survey and questionnaire</FeaturesItemTitle>
-        <FeaturesItemText>
+        <FeaturesItemText gap>
           To collect responses from colleagues, clients or potential audience in
           just a couple of clicks
         </FeaturesItemText>
@@ -78,7 +78,7 @@ export const FeaturesList = () => (
         <FeaturesItemTitle>
           Analyze surveys with built-in analytics
         </FeaturesItemTitle>
-        <FeaturesItemText>
+        <FeaturesItemText gap>
           Monitor visitor feedback with easy-to-use dashboards and reports
         </FeaturesItemText>
       </FeaturesListContentThumb>

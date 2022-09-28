@@ -8,7 +8,7 @@ import {
   HeroSection,
 } from "./Hero.styled";
 import { HeroButton } from "../Buttons";
-import heroImg from "../../images/hero-img.png";
+import heroImg from "../../images/heroImg.png";
 
 export const Hero = () => (
   <HeroSection>

@@ -14,7 +14,6 @@ const ButtonStyled = styled.button`
   width: 185px;
   height: 40px;
 
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
 
@@ -35,9 +34,12 @@ const HeroButtonStyled = styled(ButtonStyled)`
   height: 50px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
   text-transform: uppercase;
 `;
 
-export { ButtonStyled, HeroButtonStyled };
+const ExamplesButtonStyled = styled(HeroButtonStyled)`
+  width: 154px;
+  margin-top: 32px;
+`;
+
+export { ButtonStyled, HeroButtonStyled, ExamplesButtonStyled };

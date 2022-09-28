@@ -1,4 +1,8 @@
-import { ButtonStyled, HeroButtonStyled } from "./Buttons.styled";
+import {
+  ButtonStyled,
+  HeroButtonStyled,
+  ExamplesButtonStyled,
+} from "./Buttons.styled";
 
 type ButtonProps = {
   text: string;
@@ -12,4 +16,8 @@ const HeroButton = ({ text }: ButtonProps) => (
   <HeroButtonStyled type="button">{text}</HeroButtonStyled>
 );
 
-export { HeaderButton, HeroButton };
+const ExamplesButton = ({ text }: ButtonProps) => (
+  <ExamplesButtonStyled>{text}</ExamplesButtonStyled>
+);
+
+export { HeaderButton, HeroButton, ExamplesButton };

@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 const ButtonStyled = styled.button`
-  position: absolute;
-  right: 60px;
-
   background: linear-gradient(93.31deg, #006ad8 1.67%, #01acb4 98.59%),
     rgba(196, 196, 196, 0.05);
   backdrop-filter: blur(18.5px);
@@ -27,9 +24,14 @@ const ButtonStyled = styled.button`
   }
 `;
 
-const HeroButtonStyled = styled(ButtonStyled)`
-  position: static;
+const HeaderButtonStyled = styled(ButtonStyled)`
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: -140px;
+  }
+`;
 
+const HeroButtonStyled = styled(ButtonStyled)`
   width: 142px;
   height: 50px;
 
@@ -42,4 +44,4 @@ const ExamplesButtonStyled = styled(HeroButtonStyled)`
   margin-top: 32px;
 `;
 
-export { ButtonStyled, HeroButtonStyled, ExamplesButtonStyled };
+export { HeaderButtonStyled, HeroButtonStyled, ExamplesButtonStyled };

@@ -40,7 +40,7 @@ const HeroDesc = styled.p`
 const HeroImg = styled.img`
   position: absolute;
   top: -25px;
-  right: 60px;
+  right: -140px;
 `;
 
 export { HeroSection, HeroThumb, HeroText, HeroTitle, HeroDesc, HeroImg };

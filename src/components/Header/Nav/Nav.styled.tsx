@@ -6,7 +6,15 @@ const NavStyled = styled.nav`
 
 const NavList = styled.ul`
   display: flex;
-  align-items: center;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 162px;
+  }
 `;
 
 const NavItem = styled.li`

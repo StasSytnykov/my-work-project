@@ -1,5 +1,5 @@
 import {
-  ButtonStyled,
+  HeaderButtonStyled,
   HeroButtonStyled,
   ExamplesButtonStyled,
 } from "./Buttons.styled";
@@ -9,7 +9,7 @@ type ButtonProps = {
 };
 
 const HeaderButton = ({ text }: ButtonProps) => (
-  <ButtonStyled type="button">{text}</ButtonStyled>
+  <HeaderButtonStyled type="button">{text}</HeaderButtonStyled>
 );
 
 const HeroButton = ({ text }: ButtonProps) => (

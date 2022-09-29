@@ -32,7 +32,7 @@ export const Examples = () => (
       </ExamplesContentThumb>
       <ExamplesContentThumb reverse>
         <ExamplesTextThumb reverse>
-          <ExamplesText>Who’ll benefit?</ExamplesText>
+          <ExamplesText postion>Who’ll benefit?</ExamplesText>
           <ExamplesTitle>Fits to any business</ExamplesTitle>
           <ExamplesDesc>
             FeedbackHero is effective in diferrent areas of business:

@@ -25,7 +25,7 @@ const ButtonStyled = styled.button`
 `;
 
 const HeaderButtonStyled = styled(ButtonStyled)`
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     position: absolute;
     right: -140px;
   }

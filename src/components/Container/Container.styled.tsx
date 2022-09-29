@@ -21,12 +21,13 @@ const HeaderContainer = styled(Container)`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     justify-content: space-between;
     flex-direction: row;
   }
   @media screen and (min-width: 1200px) {
     position: relative;
+    flex-direction: row;
   }
 `;
 

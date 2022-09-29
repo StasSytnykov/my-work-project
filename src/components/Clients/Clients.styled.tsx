@@ -50,12 +50,14 @@ const ClientsQuotesSvg = styled.svg`
 `;
 
 const ClientsContentThumb = styled.div`
+  margin-bottom: 50px;
   @media screen and (min-width: 768px) {
     display: flex;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 151px;
+  }
 `;
-
-const ClientsDescThumb = styled.div``;
 
 const ClientsDesc = styled.p`
   font-weight: 300;
@@ -91,7 +93,7 @@ const ClientsButtonThumb = styled.div`
   margin-top: 30px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 67px;
+    margin-top: 67px;
   }
 `;
 
@@ -119,7 +121,6 @@ export {
   ClientsImage,
   ClientsQuotesSvg,
   ClientsContentThumb,
-  ClientsDescThumb,
   ClientsDesc,
   ClientsInfo,
   ClientsCompany,

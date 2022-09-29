@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 const NavStyled = styled.nav`
   display: flex;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 `;
 
 const NavList = styled.ul`

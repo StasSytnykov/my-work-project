@@ -8,7 +8,6 @@ import {
   ClientsImage,
   ClientsQuotesSvg,
   ClientsContentThumb,
-  ClientsDescThumb,
   ClientsDesc,
   ClientsInfo,
   ClientsCompany,
@@ -16,6 +15,7 @@ import {
   ClientsButtonLeft,
   ClientsButtonRight,
 } from "./Clients.styled";
+import { ClientsList } from "./ClientsList";
 
 export const Clients = () => (
   <ClientsSection>
@@ -27,7 +27,7 @@ export const Clients = () => (
         <ClientsQuotesSvg>
           <use href={sprite + "#icon-quotes"} />
         </ClientsQuotesSvg>
-        <ClientsDescThumb>
+        <div>
           <ClientsDesc>
             Some text with rewiev from client Some text with rewiev from client.
             Some text with rewiev from client Some text with rewiev from client
@@ -48,8 +48,9 @@ export const Clients = () => (
               </svg>
             </ClientsButtonRight>
           </ClientsButtonThumb>
-        </ClientsDescThumb>
+        </div>
       </ClientsContentThumb>
+      <ClientsList />
     </Container>
   </ClientsSection>
 );

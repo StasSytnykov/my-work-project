@@ -79,6 +79,14 @@ const HeroImg = styled.img`
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: -25px;
+    right: 0;
+
+    width: 600px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    position: absolute;
+    top: -25px;
     right: -140px;
 
     width: 698px;

@@ -25,7 +25,6 @@ const FeaturesListStyled = styled.ul`
 
 const FeaturesItemStyled = styled.li`
   position: relative;
-  width: 340px;
   height: 318px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
@@ -35,10 +34,6 @@ const FeaturesItemStyled = styled.li`
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 360px;
   }
 `;
 

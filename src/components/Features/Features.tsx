@@ -1,9 +1,9 @@
-import { FeaturesList } from "./FeaturesList";
 import { Container } from "../Container/Container.styled";
+import { SectionSubtitle } from "../SectionSubtitle.styled";
+import { FeaturesList } from "./FeaturesList";
+
 import {
   FeaturesSection,
-  FeaturesTextThumb,
-  FeaturesP,
   FeaturesTitle,
   FeaturesDesc,
   FeaturesThumb,
@@ -12,16 +12,14 @@ import {
 export const Features = () => (
   <FeaturesSection>
     <Container>
-      <FeaturesTextThumb>
-        <FeaturesP>Features</FeaturesP>
-        <FeaturesThumb>
-          <FeaturesTitle>Why FeedbackHero?</FeaturesTitle>
-          <FeaturesDesc>
-            Return customers with NPS service, feedback and FeedbackHero loyalty
-            assessment.
-          </FeaturesDesc>
-        </FeaturesThumb>
-      </FeaturesTextThumb>
+      <SectionSubtitle>Features</SectionSubtitle>
+      <FeaturesThumb>
+        <FeaturesTitle>Why FeedbackHero?</FeaturesTitle>
+        <FeaturesDesc>
+          Return customers with NPS service, feedback and FeedbackHero loyalty
+          assessment.
+        </FeaturesDesc>
+      </FeaturesThumb>
       <FeaturesList />
     </Container>
   </FeaturesSection>

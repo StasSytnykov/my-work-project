@@ -8,28 +8,10 @@ const FeaturesSection = styled.section`
   }
 `;
 
-const FeaturesTextThumb = styled.div`
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-`;
-
-const FeaturesP = styled.p`
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  color: #03a8b7;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    margin-right: 346px;
-  }
-`;
-
 const FeaturesThumb = styled.div`
   @media screen and (min-width: 1200px) {
     width: 570px;
+    margin-left: 420px;
   }
 `;
 
@@ -49,18 +31,11 @@ const FeaturesDesc = styled.p`
   font-size: 16px;
   line-height: 1.4;
   color: rgba(32, 39, 49, 0.75);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 49px;
   }
 `;
 
-export {
-  FeaturesSection,
-  FeaturesTextThumb,
-  FeaturesP,
-  FeaturesThumb,
-  FeaturesTitle,
-  FeaturesDesc,
-};
+export { FeaturesSection, FeaturesThumb, FeaturesTitle, FeaturesDesc };

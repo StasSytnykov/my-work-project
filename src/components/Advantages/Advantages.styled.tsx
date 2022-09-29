@@ -8,31 +8,12 @@ const AdvantagesSection = styled.section`
   }
 `;
 
-const AdvantagesTextThumb = styled.div`
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-`;
-
-const AdvantagesText = styled.p`
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  color: #03a8b7;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 248px;
-    font-size: 16px;
-  }
-`;
-
 const AdvantagesDescThumb = styled.div`
   margin-bottom: 25px;
 
   @media screen and (min-width: 1200px) {
     width: 780px;
-    margin-bottom: 50px;
+    margin: 0 0 50px 420px;
   }
 `;
 
@@ -59,8 +40,6 @@ const AdvantagesDesc = styled.p`
 
 export {
   AdvantagesSection,
-  AdvantagesTextThumb,
-  AdvantagesText,
   AdvantagesDescThumb,
   AdvantagesTitle,
   AdvantagesDesc,

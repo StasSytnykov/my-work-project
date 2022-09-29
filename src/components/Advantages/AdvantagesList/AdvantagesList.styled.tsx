@@ -2,17 +2,35 @@ import styled from "styled-components";
 
 const AdvantagesListStyled = styled.ul`
   display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const AdvantagesItem = styled.li`
-  width: 360px;
+  width: 340px;
   height: 370px;
 
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 
   &:not(:last-child) {
-    margin-right: 60px;
+    margin: 0 0 30px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 360px;
+
+    &:not(:last-child) {
+      margin: 0 60px 0 0;
+    }
   }
 `;
 

@@ -1,35 +1,54 @@
 import styled from "styled-components";
 
 const AdvantagesSection = styled.section`
-  padding: 145px 0 150px 0;
+  padding: 50px 0 50px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 145px 0 150px 0;
+  }
 `;
 
 const AdvantagesTextThumb = styled.div`
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 `;
 
 const AdvantagesText = styled.p`
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   text-transform: uppercase;
   color: #03a8b7;
 
-  margin-right: 248px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 248px;
+    font-size: 16px;
+  }
 `;
 
 const AdvantagesDescThumb = styled.div`
-  width: 780px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    width: 780px;
+    margin-bottom: 50px;
+  }
 `;
 
 const AdvantagesTitle = styled.h1`
   font-weight: 500;
-  font-size: 46px;
   line-height: 1.17;
+  font-size: 30px;
   color: #181e25;
 
-  margin-bottom: 24px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+
+    margin-bottom: 24px;
+  }
 `;
 
 const AdvantagesDesc = styled.p`

@@ -11,7 +11,7 @@ const Container = styled.div`
   @media screen and (min-width: 1200px) {
     position: relative;
     margin: 0 auto;
-    width: 1200px;
+    width: 1230px;
     padding: 0 15px;
   }
 `;

@@ -12,6 +12,6 @@ export const SectionSubtitle = styled.p`
 
     position: absolute;
     top: 0;
-    left: 0;
+    left: 15px;
   }
 `;

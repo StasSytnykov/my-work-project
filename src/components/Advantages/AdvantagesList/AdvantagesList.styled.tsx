@@ -27,7 +27,6 @@ const AdvantagesItem = styled.li`
 
   @media screen and (min-width: 1200px) {
     width: 360px;
-
     &:not(:last-child) {
       margin: 0 60px 0 0;
     }

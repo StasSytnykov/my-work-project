@@ -12,7 +12,6 @@ const AdvantagesDescThumb = styled.div`
   margin-bottom: 25px;
 
   @media screen and (min-width: 1200px) {
-    width: 780px;
     margin: 0 0 50px 420px;
   }
 `;

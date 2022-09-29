@@ -1,5 +1,6 @@
 import { Container } from "../Container/Container.styled";
 import {
+  HeroTextThumb,
   HeroThumb,
   HeroTitle,
   HeroText,
@@ -14,15 +15,19 @@ export const Hero = () => (
   <HeroSection>
     <Container>
       <HeroThumb>
-        <HeroText>Your Business Superhero</HeroText>
-        <HeroTitle>Time is money, reviews is a growing business</HeroTitle>
-        <HeroDesc>
-          The best tool for user satisfaction research, feedback, market
-          research and analytics.
-        </HeroDesc>
-        <HeroButton text={"try now"} />
+        <HeroTextThumb>
+          <HeroText>Your Business Superhero</HeroText>
+          <HeroTitle>Time is money, reviews is a growing business</HeroTitle>
+          <HeroDesc>
+            The best tool for user satisfaction research, feedback, market
+            research and analytics.
+          </HeroDesc>
+          <HeroButton text={"try now"} />
+        </HeroTextThumb>
+        <div>
+          <HeroImg src={heroImg} alt={"Work example"} />
+        </div>
       </HeroThumb>
-      <HeroImg src={heroImg} alt={"Work example"} />
     </Container>
   </HeroSection>
 );

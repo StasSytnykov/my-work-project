@@ -4,6 +4,7 @@ import { Features } from "./components/Features";
 import { Examples } from "./components/Exapmles";
 import { Advantages } from "./components/Advantages";
 import { Clients } from "./components/Clients";
+import { Pricing } from "./components/Pricing";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Examples />
         <Advantages />
         <Clients />
+        <Pricing />
       </main>
     </div>
   );

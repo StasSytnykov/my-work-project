@@ -44,4 +44,17 @@ const ExamplesButtonStyled = styled(HeroButtonStyled)`
   margin-top: 32px;
 `;
 
-export { HeaderButtonStyled, HeroButtonStyled, ExamplesButtonStyled };
+const PricingCardButtonStyled = styled(ButtonStyled)`
+  width: 276px;
+  height: 60px;
+
+  font-weight: 500;
+  font-size: 14px;
+`;
+
+export {
+  HeaderButtonStyled,
+  HeroButtonStyled,
+  ExamplesButtonStyled,
+  PricingCardButtonStyled,
+};

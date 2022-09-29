@@ -2,6 +2,7 @@ import {
   HeaderButtonStyled,
   HeroButtonStyled,
   ExamplesButtonStyled,
+  PricingCardButtonStyled,
 } from "./Buttons.styled";
 
 type ButtonProps = {
@@ -20,4 +21,8 @@ const ExamplesButton = ({ text }: ButtonProps) => (
   <ExamplesButtonStyled>{text}</ExamplesButtonStyled>
 );
 
-export { HeaderButton, HeroButton, ExamplesButton };
+const PricingCardButton = ({ text }: ButtonProps) => (
+  <PricingCardButtonStyled>{text}</PricingCardButtonStyled>
+);
+
+export { HeaderButton, HeroButton, ExamplesButton, PricingCardButton };

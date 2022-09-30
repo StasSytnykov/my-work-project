@@ -4,18 +4,43 @@ const PricingListStyled = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 
 const ListItem = styled.li`
-  width: 358px;
-  height: 569px;
+  position: relative;
+  width: 340px;
+  height: 500px;
 
   border: 1px solid #c6e5fd;
   border-radius: 10px;
+
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 358px;
+    height: 569px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
 `;
 
 const ItemThumb = styled.div`
-  padding: 40px;
+  padding: 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
 `;
 
 const Plan = styled.p`
@@ -72,11 +97,8 @@ const PlanDesc = styled.p`
   margin-bottom: 28px;
 `;
 
-const PlanAdvantagesList = styled.div``;
-
 const PlanAdvantagesItem = styled.li`
   display: flex;
-  justify-content: center;
   align-items: center;
 
   &:not(:last-child) {
@@ -85,6 +107,7 @@ const PlanAdvantagesItem = styled.li`
 `;
 
 const PlanAdvantagesItemDesc = styled.p`
+  margin-left: 20px;
   font-size: 16px;
   line-height: 1.18;
   color: #4c4f56;
@@ -100,7 +123,6 @@ export {
   PricePerYear,
   PriceDesc,
   PlanDesc,
-  PlanAdvantagesList,
   PlanAdvantagesItem,
   PlanAdvantagesItemDesc,
 };

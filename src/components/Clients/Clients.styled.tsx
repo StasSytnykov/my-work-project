@@ -11,12 +11,13 @@ const ClientsSection = styled.section`
 
 const ClientsTitle = styled.h2`
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.17;
   color: #202731;
   margin-bottom: 15px;
 
   @media screen and (min-width: 1200px) {
+    font-size: 46px;
     margin: 0 0 62px 420px;
   }
 `;

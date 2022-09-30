@@ -12,7 +12,7 @@ const ClientsCompanyThumb = styled.div`
 
 const ClientsListTitle = styled.h3`
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.2;
   color: #000000;
 

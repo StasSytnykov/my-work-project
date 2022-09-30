@@ -15,9 +15,9 @@ const FeaturesThumb = styled.div`
   }
 `;
 
-const FeaturesTitle = styled.h1`
+const FeaturesTitle = styled.h2`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.19;
   color: #202731;
   margin-bottom: 15px;

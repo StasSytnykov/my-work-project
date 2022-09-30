@@ -62,7 +62,7 @@ const ExamplesText = styled.p<IExamplesText>`
 
 const ExamplesTitle = styled.h3`
   font-weight: 500;
-  font-size: 46px;
+  font-size: 30px;
   line-height: 1.17;
   color: #202731;
 
@@ -70,6 +70,7 @@ const ExamplesTitle = styled.h3`
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
+    font-size: 46px;
   }
 `;
 

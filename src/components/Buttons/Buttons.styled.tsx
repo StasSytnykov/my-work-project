@@ -45,11 +45,17 @@ const ExamplesButtonStyled = styled(HeroButtonStyled)`
 `;
 
 const PricingCardButtonStyled = styled(ButtonStyled)`
+  position: absolute;
+  bottom: 20px;
   width: 276px;
   height: 60px;
 
   font-weight: 500;
   font-size: 14px;
+
+  @media screen and (min-width: 1200px) {
+    bottom: 40px;
+  }
 `;
 
 export {

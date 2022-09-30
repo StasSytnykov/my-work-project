@@ -14,7 +14,7 @@ export const Features = () => (
     <Container>
       <SectionSubtitle>Features</SectionSubtitle>
       <FeaturesThumb>
-        <FeaturesTitle>Why FeedbackHero?</FeaturesTitle>
+        <FeaturesTitle id={"features"}>Why FeedbackHero?</FeaturesTitle>
         <FeaturesDesc>
           Return customers with NPS service, feedback and FeedbackHero loyalty
           assessment.

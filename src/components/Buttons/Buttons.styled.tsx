@@ -74,6 +74,10 @@ const SignUpButtonRequestStyled = styled(HeroButtonStyled)`
   }
 `;
 
+const FooterButtonStyled = styled(SignUpButtonStyled)`
+  width: 144px;
+`;
+
 export {
   HeaderButtonStyled,
   HeroButtonStyled,
@@ -81,4 +85,5 @@ export {
   PricingCardButtonStyled,
   SignUpButtonStyled,
   SignUpButtonRequestStyled,
+  FooterButtonStyled,
 };

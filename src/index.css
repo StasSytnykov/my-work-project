@@ -26,3 +26,7 @@ img {
   height: auto;
   display: block;
 }
+
+address {
+  font-style: normal;
+}

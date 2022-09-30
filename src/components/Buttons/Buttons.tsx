@@ -5,6 +5,7 @@ import {
   PricingCardButtonStyled,
   SignUpButtonStyled,
   SignUpButtonRequestStyled,
+  FooterButtonStyled,
 } from "./Buttons.styled";
 
 type ButtonProps = {
@@ -35,6 +36,10 @@ const SignUpButtonRequest = ({ text }: ButtonProps) => (
   <SignUpButtonRequestStyled type="button">{text}</SignUpButtonRequestStyled>
 );
 
+const FooterButton = ({ text }: ButtonProps) => (
+  <FooterButtonStyled type="button">{text}</FooterButtonStyled>
+);
+
 export {
   HeaderButton,
   HeroButton,
@@ -42,4 +47,5 @@ export {
   PricingCardButton,
   SignUpButton,
   SignUpButtonRequest,
+  FooterButton,
 };

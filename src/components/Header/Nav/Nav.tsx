@@ -4,10 +4,10 @@ export const Nav = () => (
   <NavStyled>
     <NavList>
       <NavItem>
-        <NavLink href={""}>Features</NavLink>
+        <NavLink href={"#features"}>Features</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href={""}>Pricing</NavLink>
+        <NavLink href={"#price"}>Pricing</NavLink>
       </NavItem>
       <NavItem>
         <NavLink href={""}>Blog</NavLink>

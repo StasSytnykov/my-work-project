@@ -12,7 +12,7 @@ const AdvantagesItem = styled.li`
   width: 340px;
   height: 370px;
 
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 
   &:not(:last-child) {
@@ -40,10 +40,9 @@ const AdvantagesContentThumb = styled.div`
 const AdvantagesSvgThumb = styled.div`
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 35px auto;
   width: 90px;
   height: 90px;
-  margin-bottom: 35px;
 
   background: linear-gradient(
     134.83deg,
@@ -68,6 +67,10 @@ const AdvantagesCardTitle = styled.h3`
   line-height: 1.4;
   text-align: center;
   color: #181818;
+
+  @media screen and (min-width: 1200px) {
+    white-space: nowrap;
+  }
 `;
 
 const AdvantagesCardSubtitle = styled.p`
@@ -76,6 +79,9 @@ const AdvantagesCardSubtitle = styled.p`
   line-height: 1.5;
   text-align: center;
   color: #03a8b7;
+  @media screen and (min-width: 1200px) {
+    white-space: nowrap;
+  }
 `;
 
 const AdvantagesCardText = styled.p`

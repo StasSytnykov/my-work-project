@@ -7,6 +7,7 @@ import { Clients } from "./components/Clients";
 import { Pricing } from "./components/Pricing";
 import { OurService } from "./components/OurService";
 import { SignUp } from "./components/SignUp";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <OurService />
         <SignUp />
       </main>
+      <Footer />
     </div>
   );
 }

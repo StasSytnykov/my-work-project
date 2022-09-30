@@ -13,7 +13,7 @@ export const Pricing = () => (
     <Container>
       <SectionSubtitle>Pricing</SectionSubtitle>
       <PricingDescThumb>
-        <PricingTitle>
+        <PricingTitle id={"price"}>
           We have prepared ideal solutions for your business
         </PricingTitle>
         <PricingText>

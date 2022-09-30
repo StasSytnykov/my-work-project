@@ -11,7 +11,7 @@ const ButtonStyled = styled.button`
   width: 185px;
   height: 40px;
 
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
 
   text-align: center;
@@ -25,6 +25,7 @@ const ButtonStyled = styled.button`
 `;
 
 const HeaderButtonStyled = styled(ButtonStyled)`
+  font-size: 16px;
   @media screen and (min-width: 1600px) {
     position: absolute;
     right: -140px;
@@ -58,9 +59,26 @@ const PricingCardButtonStyled = styled(ButtonStyled)`
   }
 `;
 
+const SignUpButtonStyled = styled(HeroButtonStyled)`
+  background: linear-gradient(93.31deg, #000000 1.67%, #000000 98.59%),
+    rgba(196, 196, 196, 0.05);
+  width: 133px;
+`;
+
+const SignUpButtonRequestStyled = styled(HeroButtonStyled)`
+  width: 170px;
+  margin-left: 15px;
+  @media screen and (min-width: 768px) {
+    width: 194px;
+    margin-left: 30px;
+  }
+`;
+
 export {
   HeaderButtonStyled,
   HeroButtonStyled,
   ExamplesButtonStyled,
   PricingCardButtonStyled,
+  SignUpButtonStyled,
+  SignUpButtonRequestStyled,
 };

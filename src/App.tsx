@@ -6,6 +6,7 @@ import { Advantages } from "./components/Advantages";
 import { Clients } from "./components/Clients";
 import { Pricing } from "./components/Pricing";
 import { OurService } from "./components/OurService";
+import { SignUp } from "./components/SignUp";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Clients />
         <Pricing />
         <OurService />
+        <SignUp />
       </main>
     </div>
   );

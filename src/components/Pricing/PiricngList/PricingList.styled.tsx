@@ -25,7 +25,7 @@ const ListItem = styled.li`
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
     height: 569px;
 

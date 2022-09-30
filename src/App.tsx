@@ -5,6 +5,7 @@ import { Examples } from "./components/Exapmles";
 import { Advantages } from "./components/Advantages";
 import { Clients } from "./components/Clients";
 import { Pricing } from "./components/Pricing";
+import { OurService } from "./components/OurService";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Advantages />
         <Clients />
         <Pricing />
+        <OurService />
       </main>
     </div>
   );

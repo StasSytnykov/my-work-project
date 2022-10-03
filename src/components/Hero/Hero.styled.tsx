@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionText } from "../CommonTextStyle.styled";
 
 const HeroSection = styled.section`
   margin-bottom: 50px;
@@ -28,14 +29,9 @@ const HeroTextThumb = styled.div`
   }
 `;
 
-const HeroText = styled.p`
+const HeroText = styled(SectionText)`
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
   text-transform: uppercase;
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-  }
 `;
 
 const HeroTitle = styled.h1`

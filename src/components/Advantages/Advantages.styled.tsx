@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionTitle } from "../CommonTextStyle.styled";
 
 const AdvantagesSection = styled.section`
   padding: 50px 0 50px 0;
@@ -16,30 +17,14 @@ const AdvantagesDescThumb = styled.div`
   }
 `;
 
-const AdvantagesTitle = styled.h1`
-  font-weight: 500;
-  line-height: 1.17;
-  font-size: 30px;
+const AdvantagesTitle = styled(SectionTitle)`
   color: #181e25;
 
   margin-bottom: 15px;
 
   @media screen and (min-width: 1200px) {
-    font-size: 46px;
-
     margin-bottom: 24px;
   }
 `;
 
-const AdvantagesDesc = styled.p`
-  font-size: 16px;
-  line-height: 1.4;
-  color: #4c4f56;
-`;
-
-export {
-  AdvantagesSection,
-  AdvantagesDescThumb,
-  AdvantagesTitle,
-  AdvantagesDesc,
-};
+export { AdvantagesSection, AdvantagesDescThumb, AdvantagesTitle };

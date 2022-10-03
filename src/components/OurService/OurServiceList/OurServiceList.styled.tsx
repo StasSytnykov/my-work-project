@@ -24,15 +24,4 @@ const OurServiceItemTitle = styled.h3`
   color: #202731;
 `;
 
-const OurServiceItemText = styled.p`
-  font-size: 16px;
-  line-height: 1.4;
-  color: #4c4f56;
-`;
-
-export {
-  OurServiceListStyled,
-  OurServiceItem,
-  OurServiceItemTitle,
-  OurServiceItemText,
-};
+export { OurServiceListStyled, OurServiceItem, OurServiceItemTitle };

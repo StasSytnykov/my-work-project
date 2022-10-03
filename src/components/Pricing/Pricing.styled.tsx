@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionTitle, SectionText } from "../CommonTextStyle.styled";
 
 const PricingSection = styled.section`
   padding: 50px 0 50px 0;
@@ -16,23 +17,11 @@ const PricingDescThumb = styled.div`
   }
 `;
 
-const PricingTitle = styled.h2`
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.17;
-  color: #202731;
-
+const PricingTitle = styled(SectionTitle)`
   margin-bottom: 14px;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 46px;
-  }
 `;
 
-const PricingText = styled.p`
-  font-size: 16px;
-  line-height: 1.4;
-
+const PricingText = styled(SectionText)`
   color: rgba(0, 0, 0, 0.75);
 `;
 

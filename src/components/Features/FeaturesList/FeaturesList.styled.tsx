@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionTitle } from "../../CommonTextStyle.styled";
 
 interface IFeaturesText {
   gap?: boolean;
@@ -48,9 +49,7 @@ const FeaturesItemTitle = styled.h3`
   color: #202731;
 `;
 
-const FeaturesItemText = styled.p<IFeaturesText>`
-  font-size: 16px;
-  line-height: 1.4;
+const FeaturesItemText = styled(SectionTitle)<IFeaturesText>`
   color: rgba(0, 0, 0, 0.5);
 
   margin-top: ${(props) => (props.gap ? "23px" : "54px")};

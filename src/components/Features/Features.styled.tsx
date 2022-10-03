@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionTitle, SectionText } from "../CommonTextStyle.styled";
 
 const FeaturesSection = styled.section`
   margin-bottom: 50px;
@@ -15,21 +16,17 @@ const FeaturesThumb = styled.div`
   }
 `;
 
-const FeaturesTitle = styled.h2`
+const FeaturesTitle = styled(SectionTitle)`
   font-weight: 600;
-  font-size: 30px;
   line-height: 1.19;
-  color: #202731;
   margin-bottom: 15px;
+
   @media screen and (min-width: 1200px) {
-    font-size: 46px;
     margin-bottom: 24px;
   }
 `;
 
-const FeaturesDesc = styled.p`
-  font-size: 16px;
-  line-height: 1.4;
+const FeaturesDesc = styled(SectionText)`
   color: rgba(32, 39, 49, 0.75);
   margin-bottom: 25px;
 

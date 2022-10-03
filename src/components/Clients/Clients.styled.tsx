@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionTitle } from "../CommonTextStyle.styled";
 
 const ClientsSection = styled.section`
   padding: 50px 0;
@@ -9,15 +10,10 @@ const ClientsSection = styled.section`
   }
 `;
 
-const ClientsTitle = styled.h2`
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.17;
-  color: #202731;
+const ClientsTitle = styled(SectionTitle)`
   margin-bottom: 15px;
 
   @media screen and (min-width: 1200px) {
-    font-size: 46px;
     margin: 0 0 62px 420px;
   }
 `;

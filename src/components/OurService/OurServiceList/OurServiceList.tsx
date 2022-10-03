@@ -1,14 +1,10 @@
+import { SectionText } from "../../CommonTextStyle.styled";
+import { IOurServiceContent } from "../../../Interfaces/ourServiceInterface";
 import {
   OurServiceListStyled,
   OurServiceItem,
   OurServiceItemTitle,
-  OurServiceItemText,
 } from "./OurServiceList.styled";
-
-interface IOurServiceContent {
-  title: string;
-  text: string;
-}
 
 const ourServiceContent = [
   { title: "1000+", text: "Reviews every day" },
@@ -21,7 +17,7 @@ export const OurServiceList = () => (
     {ourServiceContent.map(({ title, text }: IOurServiceContent) => (
       <OurServiceItem key={title}>
         <OurServiceItemTitle>{title}</OurServiceItemTitle>
-        <OurServiceItemText>{text}</OurServiceItemText>
+        <SectionText>{text}</SectionText>
       </OurServiceItem>
     ))}
   </OurServiceListStyled>

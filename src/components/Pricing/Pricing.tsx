@@ -1,5 +1,5 @@
 import { Container } from "../Container/Container.styled";
-import { SectionSubtitle } from "../SectionSubtitle.styled";
+import { SectionSubtitle } from "../CommonTextStyle.styled";
 import { PricingList } from "./PiricngList";
 import {
   PricingSection,

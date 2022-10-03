@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionTitle, SectionText } from "../CommonTextStyle.styled";
 
 const OurServiceSection = styled.section`
   padding: 50px 0 50px 0;
@@ -16,25 +17,15 @@ const OurServiceTextThumb = styled.div`
   }
 `;
 
-const OurServiceTitle = styled.h2`
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.17;
-  color: #202731;
-
+const OurServiceTitle = styled(SectionTitle)`
   margin-bottom: 10px;
 
   @media screen and (min-width: 1200px) {
-    font-size: 46px;
     margin-bottom: 24px;
   }
 `;
 
-const OurServiceText = styled.p`
-  font-size: 16px;
-  line-height: 1.4;
-  color: #4c4f56;
-
+const OurServiceText = styled(SectionText)`
   margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {

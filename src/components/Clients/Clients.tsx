@@ -1,5 +1,5 @@
 import { Container } from "../Container/Container.styled";
-import { SectionSubtitle } from "../SectionSubtitle.styled";
+import { SectionSubtitle } from "../CommonTextStyle.styled";
 import image from "../../images/clientsImg.jpg";
 import sprite from "../../images/sprite.svg";
 import {

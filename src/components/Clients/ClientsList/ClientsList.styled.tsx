@@ -14,7 +14,7 @@ const ClientsListTitle = styled.h3`
   font-weight: 500;
   font-size: 30px;
   line-height: 1.2;
-  color: #000000;
+  color: #202731;
 
   margin-bottom: 20px;
 

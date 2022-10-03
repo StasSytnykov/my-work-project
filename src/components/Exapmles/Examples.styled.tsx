@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionTitle, SectionText } from "../CommonTextStyle.styled";
 
 interface IExamplesReverse {
   reverse?: boolean;
@@ -44,10 +45,8 @@ const ExamplesTextThumb = styled.div<IExamplesReverse>`
   }
 `;
 
-const ExamplesText = styled.p<IExamplesText>`
+const ExamplesText = styled(SectionText)<IExamplesText>`
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
   text-transform: uppercase;
   color: #03a8b7;
 
@@ -60,23 +59,15 @@ const ExamplesText = styled.p<IExamplesText>`
   }
 `;
 
-const ExamplesTitle = styled.h3`
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.17;
-  color: #202731;
-
+const ExamplesTitle = styled(SectionTitle)`
   margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
-    font-size: 46px;
   }
 `;
 
-const ExamplesDesc = styled.p`
-  font-size: 16px;
-  line-height: 1.4;
+const ExamplesDesc = styled(SectionText)`
   color: rgba(0, 0, 0, 0.75);
 `;
 

@@ -1,4 +1,5 @@
 import sprite from "../../../images/sprite.svg";
+import { IClientsItemData } from "../../../Interfaces/clientsIterface";
 import {
   ClientsCompanyThumb,
   ClientsListTitle,
@@ -6,12 +7,6 @@ import {
   ClientsListItem,
   ClientsListCompanySvg,
 } from "./ClientsList.styled";
-
-interface IClientsItemData {
-  width: number;
-  height: number;
-  svg: string;
-}
 
 const clientsItemData = [
   { width: 150, height: 19, svg: sprite + "#icon-company-2" },

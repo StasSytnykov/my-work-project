@@ -1,4 +1,5 @@
 import sprite from "../../../images/sprite.svg";
+import { IFooterSocialLinks } from "../../../Interfaces/linksInterface";
 import {
   ContactTitle,
   ContactLink,
@@ -6,6 +7,21 @@ import {
   ContactSocialItem,
   ContactSvg,
 } from "./Contact.styled";
+
+const footerSocialLinksData = [
+  {
+    linkHref: "https://twitter.com/",
+    svgHref: sprite + "#icon-twitter",
+  },
+  {
+    linkHref: "https://www.linkedin.com/",
+    svgHref: sprite + "#icon-linkedin",
+  },
+  {
+    linkHref: "https://www.facebook.com/",
+    svgHref: sprite + "#icon-facebook",
+  },
+];
 
 export const Contact = () => (
   <div>
@@ -17,27 +33,17 @@ export const Contact = () => (
       </ContactLink>
     </address>
     <ContactSocialList>
-      <ContactSocialItem>
-        <a href={"https://twitter.com/"}>
-          <ContactSvg width={32} height={32}>
-            <use href={sprite + "#icon-twitter"} />
-          </ContactSvg>
-        </a>
-      </ContactSocialItem>
-      <ContactSocialItem>
-        <a href={"https://www.linkedin.com/"}>
-          <ContactSvg width={32} height={32}>
-            <use href={sprite + "#icon-linkedin"} />
-          </ContactSvg>
-        </a>
-      </ContactSocialItem>
-      <ContactSocialItem>
-        <a href={"https://www.facebook.com/"}>
-          <ContactSvg width={32} height={32}>
-            <use href={sprite + "#icon-facebook"} />
-          </ContactSvg>
-        </a>
-      </ContactSocialItem>
+      {footerSocialLinksData.map(
+        ({ linkHref, svgHref }: IFooterSocialLinks) => (
+          <ContactSocialItem>
+            <a href={linkHref}>
+              <ContactSvg width={32} height={32}>
+                <use href={svgHref} />
+              </ContactSvg>
+            </a>
+          </ContactSocialItem>
+        )
+      )}
     </ContactSocialList>
   </div>
 );

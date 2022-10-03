@@ -1,3 +1,4 @@
+import { IFeaturesListItemData } from "../../../Interfaces/featuresInterface";
 import {
   FeaturesListStyled,
   FeaturesItemStyled,
@@ -7,15 +8,6 @@ import {
   FeaturesListContentThumb,
 } from "./FeaturesList.styled";
 import sprite from "../../../images/sprite.svg";
-
-interface IfeaturesListItemData {
-  width: number;
-  height: number;
-  svg: string;
-  title: string;
-  text: string;
-  gap: boolean;
-}
 
 const featuresListItemData = [
   {
@@ -71,7 +63,7 @@ const featuresListItemData = [
 export const FeaturesList = () => (
   <FeaturesListStyled>
     {featuresListItemData.map(
-      ({ width, height, svg, title, text, gap }: IfeaturesListItemData) => (
+      ({ width, height, svg, title, text, gap }: IFeaturesListItemData) => (
         <FeaturesItemStyled>
           <FeaturesListContentThumb>
             <FeaturesItemSvg width={width} height={height}>

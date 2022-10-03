@@ -45,7 +45,6 @@ export const AdvantagesList = () => (
             </defs>
           </AdvantagesSvg>
         </AdvantagesSvgThumb>
-
         <AdvantagesCardTitle>Sales growth</AdvantagesCardTitle>
         <AdvantagesCardSubtitle>Grades & stats</AdvantagesCardSubtitle>
         <AdvantagesCardText>
@@ -61,7 +60,6 @@ export const AdvantagesList = () => (
             <use href={sprite + "#icon-light"} />
           </AdvantagesSvg>
         </AdvantagesSvgThumb>
-
         <AdvantagesCardTitle>New ideas</AdvantagesCardTitle>
         <AdvantagesCardSubtitle>
           Turn customer feedback into action
@@ -79,7 +77,6 @@ export const AdvantagesList = () => (
             <use href={sprite + "#icon-time"} />
           </AdvantagesSvg>
         </AdvantagesSvgThumb>
-
         <AdvantagesCardTitle>
           Make website surveys in minutes
         </AdvantagesCardTitle>

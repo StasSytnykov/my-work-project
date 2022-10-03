@@ -9,7 +9,6 @@ export const Header = () => (
     <HeaderContainer>
       <Logo />
       <Nav />
-      <HeaderButton text={"Register"} />
     </HeaderContainer>
   </HeaderStyled>
 );

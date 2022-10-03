@@ -1,17 +1,26 @@
 import styled from "styled-components";
 
 const NavStyled = styled.nav`
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
 `;
 
+const MobileButton = styled.button`
+  border: none;
+  background-color: #fff;
+`;
+
 const NavList = styled.ul`
-  display: flex;
   margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
+    display: flex;
     margin-bottom: 0;
   }
 
@@ -33,4 +42,4 @@ const NavLink = styled.a`
   color: #202731;
 `;
 
-export { NavStyled, NavList, NavItem, NavLink };
+export { NavStyled, MobileButton, NavList, NavItem, NavLink };

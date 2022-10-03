@@ -17,16 +17,12 @@ const Container = styled.div`
 
 const HeaderContainer = styled(Container)`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    justify-content: space-between;
-    flex-direction: row;
-  }
   @media screen and (min-width: 1200px) {
     position: relative;
-    flex-direction: row;
+    justify-content: start;
   }
 `;
 

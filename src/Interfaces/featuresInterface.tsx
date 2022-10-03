@@ -5,4 +5,5 @@ export interface IFeaturesListItemData {
   title: string;
   text: string;
   gap: boolean;
+  id: string;
 }

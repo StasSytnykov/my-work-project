@@ -26,7 +26,7 @@ export const QuickLinksList = () => (
     <LinksListTitle>Quick links</LinksListTitle>
     <ul>
       {quickItemContent.map(({ href, text }: ILinks) => (
-        <LinksListItem>
+        <LinksListItem key={text}>
           <Link href={href}>{text}</Link>
         </LinksListItem>
       ))}

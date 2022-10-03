@@ -19,7 +19,7 @@ const ourServiceContent = [
 export const OurServiceList = () => (
   <OurServiceListStyled>
     {ourServiceContent.map(({ title, text }: IOurServiceContent) => (
-      <OurServiceItem>
+      <OurServiceItem key={title}>
         <OurServiceItemTitle>{title}</OurServiceItemTitle>
         <OurServiceItemText>{text}</OurServiceItemText>
       </OurServiceItem>

@@ -35,7 +35,7 @@ export const Contact = () => (
     <ContactSocialList>
       {footerSocialLinksData.map(
         ({ linkHref, svgHref }: IFooterSocialLinks) => (
-          <ContactSocialItem>
+          <ContactSocialItem key={linkHref}>
             <a href={linkHref}>
               <ContactSvg width={32} height={32}>
                 <use href={svgHref} />

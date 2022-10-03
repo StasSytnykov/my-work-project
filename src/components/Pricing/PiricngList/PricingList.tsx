@@ -69,7 +69,7 @@ export const PricingList = () => (
         planAdvantagesItem,
         buttonText,
       }: IPricingData) => (
-        <ListItem>
+        <ListItem key={plan}>
           <ItemThumb>
             <Plan>{plan}</Plan>
             <PriceThumb>
@@ -82,7 +82,7 @@ export const PricingList = () => (
             <PlanDesc>{planDesc}</PlanDesc>
             <ul>
               {planAdvantagesItem.map((text: string) => (
-                <PlanAdvantagesItem>
+                <PlanAdvantagesItem key={text}>
                   <svg width={12} height={9}>
                     <use href={sprite + "#icon-mark"} />
                   </svg>

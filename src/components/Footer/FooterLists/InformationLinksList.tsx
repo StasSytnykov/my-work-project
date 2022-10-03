@@ -12,7 +12,7 @@ export const InformationLinksList = () => (
     <LinksListTitle>Legal information</LinksListTitle>
     <ul>
       {informationItemContent.map((text: string) => (
-        <LinksListItem>
+        <LinksListItem key={text}>
           <InformationLink href={""}>{text}</InformationLink>
         </LinksListItem>
       ))}

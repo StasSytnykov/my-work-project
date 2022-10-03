@@ -20,7 +20,7 @@ export const Nav = () => (
   <NavStyled>
     <NavList>
       {navItemContent.map(({ href, text }: ILinks) => (
-        <NavItem>
+        <NavItem key={text}>
           <NavLink href={href}>{text}</NavLink>
         </NavItem>
       ))}

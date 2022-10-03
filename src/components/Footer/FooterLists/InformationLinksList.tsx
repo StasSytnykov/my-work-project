@@ -5,19 +5,17 @@ import {
   InformationLink,
 } from "./LinksList.styled";
 
+const informationItemContent = ["Privacy Policy", "Cookie", "Terms of use"];
+
 export const InformationLinksList = () => (
   <ListsThumb>
     <LinksListTitle>Legal information</LinksListTitle>
     <ul>
-      <LinksListItem>
-        <InformationLink href={""}>Privacy Policy</InformationLink>
-      </LinksListItem>
-      <LinksListItem>
-        <InformationLink href={""}>Cookie</InformationLink>
-      </LinksListItem>
-      <LinksListItem>
-        <InformationLink href={""}>Terms of use</InformationLink>
-      </LinksListItem>
+      {informationItemContent.map((text: string) => (
+        <LinksListItem>
+          <InformationLink href={""}>{text}</InformationLink>
+        </LinksListItem>
+      ))}
     </ul>
   </ListsThumb>
 );

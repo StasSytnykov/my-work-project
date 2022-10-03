@@ -1,5 +1,6 @@
 import { PricingCardButton } from "../../Buttons/Buttons";
 import sprite from "../../../images/sprite.svg";
+import { IPricingData } from "../../../Interfaces/pricingInterface";
 import {
   PricingListStyled,
   ListItem,
@@ -14,141 +15,85 @@ import {
   PlanAdvantagesItemDesc,
 } from "./PricingList.styled";
 
+const clientsItemData = [
+  {
+    plan: "start",
+    pricePerMonth: "€49",
+    pricePerYear: "€588",
+    priceDesc: "per year",
+    planDesc:
+      "10% discount on early payment. The best soution for small business.",
+    planAdvantagesItem: ["1 Business location", "1 QR Code", "Custom branding"],
+    buttonText: "Choose this plan",
+  },
+  {
+    plan: "Standart",
+    pricePerMonth: "€150",
+    pricePerYear: "€588",
+    priceDesc: "per year",
+    planDesc: "10% discount on early payment. The best for medium business.",
+    planAdvantagesItem: [
+      "3 Business location",
+      "18 QR Code",
+      "Custom urls and branding",
+      "Unlimited questions",
+    ],
+    buttonText: "Choose this plan",
+  },
+  {
+    plan: "Premium",
+    pricePerMonth: "€250",
+    pricePerYear: "€588",
+    priceDesc: "per year",
+    planDesc: "10% discount on early payment. All-in-one for interprises.",
+    planAdvantagesItem: [
+      "Unlimited QR areas",
+      "Unlimited reviews",
+      "Unlimited questions",
+      "Custom urls and branding",
+      "Custom questionaries",
+    ],
+    buttonText: "Contact Us",
+  },
+];
+
 export const PricingList = () => (
   <PricingListStyled>
-    <ListItem>
-      <ItemThumb>
-        <Plan>start</Plan>
-        <PriceThumb>
-          <PricePerMonth>€49</PricePerMonth>
-          <div>
-            <PricePerYear>€588</PricePerYear>
-            <PriceDesc>per year</PriceDesc>
-          </div>
-        </PriceThumb>
-        <PlanDesc>
-          10% discount on early payment. The best soution for small business.
-        </PlanDesc>
-        <ul>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>1 Business location</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>1 QR Code</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>Custom branding</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-        </ul>
-        <PricingCardButton text={"Choose this plan"} />
-      </ItemThumb>
-    </ListItem>
-    <ListItem>
-      <ItemThumb>
-        <Plan>Standart</Plan>
-        <PriceThumb>
-          <PricePerMonth>€150</PricePerMonth>
-          <div>
-            <PricePerYear>€588</PricePerYear>
-            <PriceDesc>per year</PriceDesc>
-          </div>
-        </PriceThumb>
-        <PlanDesc>
-          10% discount on early payment. The best for medium business.
-        </PlanDesc>
-        <ul>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>
-              3 Business locations
-            </PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>18 QR Code</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>
-              Custom urls and branding
-            </PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>Unlimited questions</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-        </ul>
-        <PricingCardButton text={"Choose this plan"} />
-      </ItemThumb>
-    </ListItem>
-    <ListItem>
-      <ItemThumb>
-        <Plan>Premium</Plan>
-        <PriceThumb>
-          <PricePerMonth>€250</PricePerMonth>
-          <div>
-            <PricePerYear>€588</PricePerYear>
-            <PriceDesc>per year</PriceDesc>
-          </div>
-        </PriceThumb>
-        <PlanDesc>
-          10% discount on early payment. All-in-one for interprises.
-        </PlanDesc>
-        <ul>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>Unlimited QR areas</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>Unlimited reviews</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>Unlimited questions</PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>
-              Custom urls and branding
-            </PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-          <PlanAdvantagesItem>
-            <svg width={12} height={9}>
-              <use href={sprite + "#icon-mark"} />
-            </svg>
-            <PlanAdvantagesItemDesc>
-              Custom questionaries
-            </PlanAdvantagesItemDesc>
-          </PlanAdvantagesItem>
-        </ul>
-        <PricingCardButton text={"Choose this plan"} />
-      </ItemThumb>
-    </ListItem>
+    {clientsItemData.map(
+      ({
+        plan,
+        pricePerMonth,
+        pricePerYear,
+        priceDesc,
+        planDesc,
+        planAdvantagesItem,
+        buttonText,
+      }: IPricingData) => (
+        <ListItem>
+          <ItemThumb>
+            <Plan>{plan}</Plan>
+            <PriceThumb>
+              <PricePerMonth>{pricePerMonth}</PricePerMonth>
+              <div>
+                <PricePerYear>{pricePerYear}</PricePerYear>
+                <PriceDesc>{priceDesc}</PriceDesc>
+              </div>
+            </PriceThumb>
+            <PlanDesc>{planDesc}</PlanDesc>
+            <ul>
+              {planAdvantagesItem.map((text: string) => (
+                <PlanAdvantagesItem>
+                  <svg width={12} height={9}>
+                    <use href={sprite + "#icon-mark"} />
+                  </svg>
+                  <PlanAdvantagesItemDesc>{text}</PlanAdvantagesItemDesc>
+                </PlanAdvantagesItem>
+              ))}
+            </ul>
+            <PricingCardButton text={buttonText} />
+          </ItemThumb>
+        </ListItem>
+      )
+    )}
   </PricingListStyled>
 );

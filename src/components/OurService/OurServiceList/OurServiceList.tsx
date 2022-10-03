@@ -5,19 +5,24 @@ import {
   OurServiceItemText,
 } from "./OurServiceList.styled";
 
+interface IOurServiceContent {
+  title: string;
+  text: string;
+}
+
+const ourServiceContent = [
+  { title: "1000+", text: "Reviews every day" },
+  { title: "550+", text: "Trades connected" },
+  { title: "240+", text: "Companies we serve" },
+];
+
 export const OurServiceList = () => (
   <OurServiceListStyled>
-    <OurServiceItem>
-      <OurServiceItemTitle>1000+</OurServiceItemTitle>
-      <OurServiceItemText>Reviews every day</OurServiceItemText>
-    </OurServiceItem>
-    <OurServiceItem>
-      <OurServiceItemTitle>550+</OurServiceItemTitle>
-      <OurServiceItemText>Trades connected</OurServiceItemText>
-    </OurServiceItem>
-    <OurServiceItem>
-      <OurServiceItemTitle>240+</OurServiceItemTitle>
-      <OurServiceItemText>Companies we serve</OurServiceItemText>
-    </OurServiceItem>
+    {ourServiceContent.map(({ title, text }: IOurServiceContent) => (
+      <OurServiceItem>
+        <OurServiceItemTitle>{title}</OurServiceItemTitle>
+        <OurServiceItemText>{text}</OurServiceItemText>
+      </OurServiceItem>
+    ))}
   </OurServiceListStyled>
 );

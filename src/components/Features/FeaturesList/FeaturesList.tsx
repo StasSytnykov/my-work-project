@@ -8,80 +8,80 @@ import {
 } from "./FeaturesList.styled";
 import sprite from "../../../images/sprite.svg";
 
+interface IfeaturesListItemData {
+  width: number;
+  height: number;
+  svg: string;
+  title: string;
+  text: string;
+  gap: boolean;
+}
+
+const featuresListItemData = [
+  {
+    width: 39,
+    height: 39,
+    svg: sprite + "#icon-pdf",
+    title: "Export results",
+    text: "With the one click, you can download all your survey results in PDF format",
+    gap: false,
+  },
+  {
+    width: 25,
+    height: 27,
+    svg: sprite + "#icon-git",
+    title: "Easy share",
+    text: "Insert the survey directly on your website or send the link to your friends",
+    gap: false,
+  },
+  {
+    width: 38,
+    height: 38,
+    svg: sprite + "#icon-label",
+    title: "Export results",
+    text: "Receive instant messages in the messenger when you mention your brand online or new reviews",
+    gap: false,
+  },
+  {
+    width: 39,
+    height: 39,
+    svg: sprite + "#icon-notebook",
+    title: "Survey and questionnaire",
+    text: "To collect responses from colleagues, clients or potential audience in just a couple of clicks",
+    gap: true,
+  },
+  {
+    width: 32,
+    height: 32,
+    svg: sprite + "#icon-r-code",
+    title: "QR code generator",
+    text: "Find out what your customers want and understand what you are doing right or wrong",
+    gap: false,
+  },
+  {
+    width: 32,
+    height: 32,
+    svg: sprite + "#icon-analytics",
+    title: "Analyze surveys with built-in analytics",
+    text: "Monitor visitor feedback with easy-to-use dashboards and reports",
+    gap: true,
+  },
+];
+
 export const FeaturesList = () => (
   <FeaturesListStyled>
-    <FeaturesItemStyled>
-      <FeaturesListContentThumb>
-        <FeaturesItemSvg width={39} height={39}>
-          <use href={sprite + "#icon-pdf"} />
-        </FeaturesItemSvg>
-        <FeaturesItemTitle>Export results</FeaturesItemTitle>
-        <FeaturesItemText>
-          With the one click, you can download all your survey results in PDF
-          format
-        </FeaturesItemText>
-      </FeaturesListContentThumb>
-    </FeaturesItemStyled>
-    <FeaturesItemStyled>
-      <FeaturesListContentThumb>
-        <FeaturesItemSvg width={25} height={27}>
-          <use href={sprite + "#icon-git"} />
-        </FeaturesItemSvg>
-        <FeaturesItemTitle>Easy share</FeaturesItemTitle>
-        <FeaturesItemText>
-          Insert the survey directly on your website or send the link to your
-          friends
-        </FeaturesItemText>
-      </FeaturesListContentThumb>
-    </FeaturesItemStyled>
-    <FeaturesItemStyled>
-      <FeaturesListContentThumb>
-        <FeaturesItemSvg width={38} height={38}>
-          <use href={sprite + "#icon-label"} />
-        </FeaturesItemSvg>
-        <FeaturesItemTitle>Audience loyalty</FeaturesItemTitle>
-        <FeaturesItemText>
-          Receive instant messages in the messenger when you mention your brand
-          online or new reviews
-        </FeaturesItemText>
-      </FeaturesListContentThumb>
-    </FeaturesItemStyled>
-    <FeaturesItemStyled>
-      <FeaturesListContentThumb>
-        <FeaturesItemSvg width={39} height={39}>
-          <use href={sprite + "#icon-notebook"} />
-        </FeaturesItemSvg>
-        <FeaturesItemTitle>Survey and questionnaire</FeaturesItemTitle>
-        <FeaturesItemText gap>
-          To collect responses from colleagues, clients or potential audience in
-          just a couple of clicks
-        </FeaturesItemText>
-      </FeaturesListContentThumb>
-    </FeaturesItemStyled>
-    <FeaturesItemStyled>
-      <FeaturesListContentThumb>
-        <FeaturesItemSvg width={32} height={32}>
-          <use href={sprite + "#icon-r-code"} />
-        </FeaturesItemSvg>
-        <FeaturesItemTitle>QR code generator</FeaturesItemTitle>
-        <FeaturesItemText>
-          Find out what your customers want and understand what you are doing
-          right or wrong
-        </FeaturesItemText>
-      </FeaturesListContentThumb>
-    </FeaturesItemStyled>
-    <FeaturesItemStyled>
-      <FeaturesListContentThumb>
-        <FeaturesItemSvg width={32} height={32}>
-          <use href={sprite + "#icon-analytics"} />
-        </FeaturesItemSvg>
-        <FeaturesItemTitle>
-          Analyze surveys with built-in analytics
-        </FeaturesItemTitle>
-        <FeaturesItemText gap>
-          Monitor visitor feedback with easy-to-use dashboards and reports
-        </FeaturesItemText>
-      </FeaturesListContentThumb>
-    </FeaturesItemStyled>
+    {featuresListItemData.map(
+      ({ width, height, svg, title, text, gap }: IfeaturesListItemData) => (
+        <FeaturesItemStyled>
+          <FeaturesListContentThumb>
+            <FeaturesItemSvg width={width} height={height}>
+              <use href={svg} />
+            </FeaturesItemSvg>
+            <FeaturesItemTitle>{title} </FeaturesItemTitle>
+            <FeaturesItemText gap={gap}>{text}</FeaturesItemText>
+          </FeaturesListContentThumb>
+        </FeaturesItemStyled>
+      )
+    )}
   </FeaturesListStyled>
 );

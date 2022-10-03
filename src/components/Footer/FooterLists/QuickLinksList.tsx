@@ -1,3 +1,4 @@
+import { ILinks } from "../../../Interfaces/linksInterface";
 import {
   ListsThumb,
   LinksListTitle,
@@ -5,19 +6,30 @@ import {
   Link,
 } from "./LinksList.styled";
 
+const quickItemContent = [
+  {
+    href: "#features",
+    text: "Features",
+  },
+  {
+    href: "",
+    text: "Blog",
+  },
+  {
+    href: "#price",
+    text: "Price",
+  },
+];
+
 export const QuickLinksList = () => (
   <ListsThumb>
     <LinksListTitle>Quick links</LinksListTitle>
     <ul>
-      <LinksListItem>
-        <Link href={"#features"}>Features</Link>
-      </LinksListItem>
-      <LinksListItem>
-        <Link href={""}>Blog</Link>
-      </LinksListItem>
-      <LinksListItem>
-        <Link href={"#price"}>Price</Link>
-      </LinksListItem>
+      {quickItemContent.map(({ href, text }: ILinks) => (
+        <LinksListItem>
+          <Link href={href}>{text}</Link>
+        </LinksListItem>
+      ))}
     </ul>
   </ListsThumb>
 );

@@ -1,6 +1,7 @@
+import { Logo } from "../../Logo";
 import { HeaderButton } from "../../Buttons";
 import { ILinks } from "../../../Interfaces/linksInterface";
-import { IMobileNavProps } from "../../../Interfaces/mobileNav";
+import { IMobileNavProps } from "../../../Interfaces/mobileNavInterface";
 import { navItemContent } from "../Nav/Nav";
 import sprite from "../../../images/sprite.svg";
 import { NavLink } from "../Nav/Nav.styled";
@@ -10,23 +11,36 @@ import {
   MobileNavList,
   MobileNavItem,
 } from "./MobileNav.styled";
+import { useEffect } from "react";
 
 export const MobileNav = ({ setIsMobileMenuOpen }: IMobileNavProps) => {
-  const onCloseButtonClick = () => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, []);
+
+  const onClickCloseMenu = () => {
     setIsMobileMenuOpen(false);
   };
 
   return (
     <MobileThumb>
-      <MobileQuiteButton onClick={onCloseButtonClick} type={"button"}>
+      <MobileQuiteButton onClick={onClickCloseMenu} type={"button"}>
         <svg width={25} height={25}>
           <use href={sprite + "#icon-mobile-close"} />
         </svg>
       </MobileQuiteButton>
+
+      <Logo />
       <MobileNavList>
         {navItemContent.map(({ href, text }: ILinks) => (
           <MobileNavItem key={text}>
-            <NavLink href={href}>{text}</NavLink>
+            <NavLink onClick={onClickCloseMenu} href={href}>
+              {text}
+            </NavLink>
           </MobileNavItem>
         ))}
       </MobileNavList>

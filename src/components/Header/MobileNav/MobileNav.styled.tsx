@@ -32,7 +32,7 @@ const MobileQuiteButton = styled.button`
 `;
 
 const MobileNavList = styled.ul`
-  //display: none;
+  margin: 20px 0 20px 0;
 `;
 
 const MobileNavItem = styled.li`

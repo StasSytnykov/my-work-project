@@ -7,3 +7,7 @@ export interface IFeaturesListItemData {
   gap: boolean;
   id: string;
 }
+
+export interface IFeaturesText {
+  gap?: boolean;
+}

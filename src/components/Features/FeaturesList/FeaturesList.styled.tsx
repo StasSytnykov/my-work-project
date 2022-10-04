@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import { SectionTitle, SectionText } from "../../CommonTextStyle.styled";
-
-interface IFeaturesText {
-  gap?: boolean;
-}
+import { IFeaturesText } from "../../../Interfaces/featuresInterface";
+import { SectionText } from "../../CommonTextStyle.styled";
 
 const FeaturesListStyled = styled.ul`
   display: flex;

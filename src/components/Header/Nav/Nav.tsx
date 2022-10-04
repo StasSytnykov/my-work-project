@@ -62,7 +62,7 @@ export const Nav = () => {
     setIsMobileMenuOpen(true);
   };
 
-  const handleClickMobileCloseBtn = (isOpen: boolean) => {
+  const handleClickMobileClose = (isOpen: boolean) => {
     setIsMobileMenuOpen(isOpen);
   };
 
@@ -90,7 +90,7 @@ export const Nav = () => {
       )}
 
       {isMobileMenuOpen && (
-        <MobileNav setIsMobileMenuOpen={handleClickMobileCloseBtn} />
+        <MobileNav setIsMobileMenuOpen={handleClickMobileClose} />
       )}
     </NavStyled>
   );

@@ -1,13 +1,9 @@
 import styled from "styled-components";
+import {
+  IExamplesText,
+  IExamplesReverse,
+} from "../../Interfaces/examplesInterface";
 import { SectionTitle, SectionText } from "../CommonTextStyle.styled";
-
-interface IExamplesReverse {
-  reverse?: boolean;
-}
-
-interface IExamplesText {
-  postion?: boolean;
-}
 
 const ExapmlesSection = styled.section`
   background-color: #fcfcfc;
@@ -51,7 +47,7 @@ const ExamplesText = styled(SectionText)<IExamplesText>`
   color: #03a8b7;
 
   @media screen and (max-width: 767px) {
-    text-align: ${(props) => (props.postion ? "end" : "start")};
+    text-align: ${(props) => (props.position ? "end" : "start")};
   }
 
   @media screen and (min-width: 768px) {

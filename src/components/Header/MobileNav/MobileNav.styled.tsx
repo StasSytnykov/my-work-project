@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FONTS_SIZES } from "../../../stylesVariables/variables";
 
 const MobileThumb = styled.div`
   position: absolute;
@@ -28,7 +29,6 @@ const MobileQuiteButton = styled.button`
 
   background-color: transparent;
   border: none;
-  opacity: 80%;
 `;
 
 const MobileNavList = styled.ul`
@@ -36,7 +36,7 @@ const MobileNavList = styled.ul`
 `;
 
 const MobileNavItem = styled.li`
-  font-size: 16px;
+  font-size: ${FONTS_SIZES.textFontSize};
   line-height: 1.18;
 
   &:not(:last-child) {

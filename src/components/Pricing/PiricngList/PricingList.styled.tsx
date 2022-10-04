@@ -1,11 +1,16 @@
 import styled from "styled-components";
+import {
+  PALETTE,
+  FONTS_SIZES,
+  MEDIA_RULES,
+} from "../../../stylesVariables/variables";
 
 const PricingListStyled = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     flex-direction: row;
     justify-content: center;
   }
@@ -19,13 +24,13 @@ const ListItem = styled.li`
   border: 1px solid #c6e5fd;
   border-radius: 10px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: ${MEDIA_RULES.tabletBreakPointMaxWidth}) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     width: 358px;
     height: 569px;
 
@@ -38,7 +43,7 @@ const ListItem = styled.li`
 const ItemThumb = styled.div`
   padding: 20px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     padding: 40px;
   }
 `;
@@ -68,31 +73,30 @@ const PriceThumb = styled.div`
 
 const PricePerMonth = styled.h3`
   font-weight: 700;
-  font-size: 46px;
+  font-size: ${FONTS_SIZES.titleFontSize};
   line-height: 1.21;
   text-transform: uppercase;
   color: rgba(18, 18, 18, 0.8);
 `;
 
 const PricePerYear = styled.p`
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
+  font-size: ${FONTS_SIZES.textFontSize};
   line-height: 1.2;
 
   margin-bottom: 4px;
 `;
 
 const PriceDesc = styled(PricePerYear)`
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 0;
+  font-size: ${FONTS_SIZES.smallerTextFontSize};
+  color: ${PALETTE.accentTextColorLighter};
 `;
 
 const PlanDesc = styled.p`
-  font-size: 16px;
+  font-size: ${FONTS_SIZES.textFontSize};
   line-height: 1.18;
 
-  color: rgba(0, 0, 0, 0.5);
+  color: ${PALETTE.accentTextColorLighter};
 
   margin-bottom: 28px;
 `;
@@ -108,9 +112,9 @@ const PlanAdvantagesItem = styled.li`
 
 const PlanAdvantagesItemDesc = styled.p`
   margin-left: 20px;
-  font-size: 16px;
+  font-size: ${FONTS_SIZES.textFontSize};
   line-height: 1.18;
-  color: #4c4f56;
+  color: ${PALETTE.secondaryTextColor};
 `;
 
 export {

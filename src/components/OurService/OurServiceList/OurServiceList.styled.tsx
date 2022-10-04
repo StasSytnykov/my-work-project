@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { PALETTE } from "../../../stylesVariables/variables";
 
 const OurServiceListStyled = styled.ul`
   display: flex;
@@ -21,7 +22,7 @@ const OurServiceItem = styled.li`
 const OurServiceItemTitle = styled.h3`
   font-size: 66px;
   line-height: 77px;
-  color: #202731;
+  color: ${PALETTE.primaryTextColor};
 `;
 
 export { OurServiceListStyled, OurServiceItem, OurServiceItemTitle };

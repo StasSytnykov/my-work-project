@@ -1,36 +1,41 @@
 import styled from "styled-components";
+import {
+  PALETTE,
+  FONTS_SIZES,
+  MEDIA_RULES,
+} from "../stylesVariables/variables";
 
 const SectionTitle = styled.h2`
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.17;
-  color: #202731;
+  font-size: ${FONTS_SIZES.mobileTitleFontSize};
+  font-weight: ${FONTS_SIZES.titleFontWeight};
+  line-height: ${FONTS_SIZES.titleLineHeight};
+  color: ${PALETTE.primaryTextColor};
 
-  @media screen and (min-width: 768px) {
-    font-size: 35px;
+  @media screen and (min-width: ${MEDIA_RULES.tabletBreakPoint}) {
+    font-size: ${FONTS_SIZES.tabletTitleFontSize};
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 46px;
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
+    font-size: ${FONTS_SIZES.titleFontSize};
   }
 `;
 
 const SectionText = styled.p`
-  font-size: 14px;
-  line-height: 1.4;
-  color: #4c4f56;
+  font-size: ${FONTS_SIZES.smallerTextFontSize};
+  line-height: ${FONTS_SIZES.textLineHeight};
+  color: ${PALETTE.secondaryTextColor};
 
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
+    font-size: ${FONTS_SIZES.textFontSize};
   }
 `;
 
 const SectionSubtitle = styled(SectionText)`
-  font-weight: 500;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
   text-transform: uppercase;
-  color: #03a8b7;
+  color: ${PALETTE.accentColor};
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     position: absolute;
     top: 0;
     left: 15px;

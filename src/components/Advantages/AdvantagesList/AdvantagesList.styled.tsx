@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import {
+  PALETTE,
+  FONTS_SIZES,
+  MEDIA_RULES,
+} from "../../../stylesVariables/variables";
 
 const AdvantagesListStyled = styled.ul`
   display: flex;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: ${MEDIA_RULES.mobileVersionMaxWidth}) {
     flex-direction: column;
     align-items: center;
   }
@@ -19,13 +24,13 @@ const AdvantagesItem = styled.li`
     margin: 0 0 30px 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${MEDIA_RULES.tabletBreakPoint}) {
     &:not(:last-child) {
       margin: 0 20px 0 0;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     width: 360px;
     &:not(:last-child) {
       margin: 0 60px 0 0;
@@ -62,32 +67,32 @@ const AdvantagesSvg = styled.svg`
 `;
 
 const AdvantagesCardTitle = styled.h3`
-  font-weight: 500;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
   font-size: 18px;
-  line-height: 1.4;
+  line-height: ${FONTS_SIZES.textLineHeight};
   text-align: center;
   color: #181818;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     white-space: nowrap;
   }
 `;
 
 const AdvantagesCardSubtitle = styled.p`
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
+  font-size: ${FONTS_SIZES.textLineHeight};
   line-height: 1.5;
   text-align: center;
-  color: #03a8b7;
-  @media screen and (min-width: 1200px) {
+  color: ${PALETTE.accentColor};
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     white-space: nowrap;
   }
 `;
 
 const AdvantagesCardText = styled.p`
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
+  font-size: ${FONTS_SIZES.textFontSize};
+  line-height: ${FONTS_SIZES.textLineHeight};
   text-align: center;
   color: rgba(24, 24, 24, 0.5);
 `;

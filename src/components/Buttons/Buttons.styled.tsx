@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import {
+  PALETTE,
+  FONTS_SIZES,
+  MEDIA_RULES,
+} from "../../stylesVariables/variables";
 
 const ButtonStyled = styled.button`
   background: linear-gradient(93.31deg, #006ad8 1.67%, #01acb4 98.59%),
@@ -11,12 +16,12 @@ const ButtonStyled = styled.button`
   width: 185px;
   height: 40px;
 
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: ${FONTS_SIZES.smallerTextFontSize};
+  line-height: ${FONTS_SIZES.textLineHeight};
 
   text-align: center;
 
-  color: #ffffff;
+  color: ${PALETTE.buttonTextColor};
 
   &:hover,
   &:focus {
@@ -25,7 +30,7 @@ const ButtonStyled = styled.button`
 `;
 
 const HeaderButtonStyled = styled(ButtonStyled)`
-  font-size: 16px;
+  font-size: ${FONTS_SIZES.textFontSize};
   @media screen and (min-width: 1600px) {
     position: absolute;
     right: -140px;
@@ -36,7 +41,7 @@ const HeroButtonStyled = styled(ButtonStyled)`
   width: 142px;
   height: 50px;
 
-  font-weight: 500;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
   text-transform: uppercase;
 `;
 
@@ -51,10 +56,9 @@ const PricingCardButtonStyled = styled(ButtonStyled)`
   width: 276px;
   height: 60px;
 
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     bottom: 40px;
   }
 `;

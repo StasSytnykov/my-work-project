@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { PALETTE } from "../../../stylesVariables/variables";
 
 const ClientsCompanyThumb = styled.div`
   @media screen and (min-width: 768px) {
@@ -14,7 +15,7 @@ const ClientsListTitle = styled.h3`
   font-weight: 500;
   font-size: 30px;
   line-height: 1.2;
-  color: #202731;
+  color: ${PALETTE.primaryTextColor};
 
   margin-bottom: 20px;
 

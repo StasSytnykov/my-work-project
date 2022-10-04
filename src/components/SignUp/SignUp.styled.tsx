@@ -1,23 +1,28 @@
 import styled from "styled-components";
+import {
+  PALETTE,
+  FONTS_SIZES,
+  MEDIA_RULES,
+} from "../../stylesVariables/variables";
 import signUpImg from "../../images/signUp.png";
 
 const SignUpSection = styled.section`
   padding: 50px 0 50px 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     padding: 129px 0 300px 0;
   }
 `;
 
 const SignUpContentThumb = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${MEDIA_RULES.tabletBreakPoint}) {
     display: flex;
   }
 `;
 
 const SignUpImgBox = styled.div`
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${MEDIA_RULES.tabletBreakPoint}) {
     display: block;
     width: 300px;
     height: 300px;
@@ -27,37 +32,37 @@ const SignUpImgBox = styled.div`
 `;
 
 const SignUpTextThumb = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${MEDIA_RULES.tabletBreakPoint}) {
     margin: 0 50px 0 0;
     width: 360px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     margin: 0 93px 0 420px;
   }
 `;
 
 const SignUpTitle = styled.h2`
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
+  font-size: ${FONTS_SIZES.mobileTitleFontSize};
   line-height: 1.17;
-  color: #202731;
+  color: ${PALETTE.primaryTextColor};
 
   margin-bottom: 10px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${MEDIA_RULES.tabletBreakPoint}) {
     margin-bottom: 24px;
-    font-size: 46px;
+    font-size: ${FONTS_SIZES.titleFontSize};
   }
 `;
 
 const SignUpText = styled.p`
-  font-size: 16px;
-  line-height: 1.4;
-  color: #4c4f56;
+  font-size: ${FONTS_SIZES.textFontSize};
+  line-height: ${FONTS_SIZES.textLineHeight};
+  color: ${PALETTE.secondaryTextColor};
 
   margin-bottom: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
     margin-bottom: 50px;
   }
 `;

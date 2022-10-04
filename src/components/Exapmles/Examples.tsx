@@ -1,7 +1,7 @@
 import { Container } from "../Container/Container.styled";
 import { ExamplesButton } from "../Buttons/Buttons";
 import {
-  ExapmlesSection,
+  ExamplesSection,
   ExamplesText,
   ExamplesTitle,
   ExamplesDesc,
@@ -13,7 +13,7 @@ import examplesImgOne from "../../images/examplesImgOne.jpg";
 import examplesImgTwo from "../../images/examplesImgTwo.jpg";
 
 export const Examples = () => (
-  <ExapmlesSection>
+  <ExamplesSection>
     <Container>
       <ExamplesContentThumb>
         <ExamplesTextThumb>
@@ -44,5 +44,5 @@ export const Examples = () => (
         <ExamplesImg src={examplesImgTwo} alt={"Fits to any business"} />
       </ExamplesContentThumb>
     </Container>
-  </ExapmlesSection>
+  </ExamplesSection>
 );

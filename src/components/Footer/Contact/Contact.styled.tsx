@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import {
+  PALETTE,
+  FONTS_SIZES,
+  MEDIA_RULES,
+} from "../../../stylesVariables/variables";
 
 const ContactTitle = styled.h4`
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #000000;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
+  font-size: ${FONTS_SIZES.blockTitleFontSize};
+  line-height: ${FONTS_SIZES.textLineHeight};
+  color: ${PALETTE.footerTextColor};
 
   margin-bottom: 10px;
 
@@ -16,7 +21,7 @@ const ContactTitle = styled.h4`
 const ContactLink = styled.a`
   display: block;
   line-height: 1.18;
-  color: #000000;
+  color: ${PALETTE.footerTextColor};
 
   margin-bottom: 12px;
 
@@ -24,7 +29,7 @@ const ContactLink = styled.a`
 
   &:hover,
   &:focus {
-    color: #03a8b7;
+    color: ${PALETTE.accentColor};
   }
 `;
 
@@ -46,7 +51,7 @@ const ContactSvg = styled.svg`
 
   &:hover,
   &:focus {
-    fill: #03a8b7;
+    fill: ${PALETTE.accentColor};
   }
 `;
 

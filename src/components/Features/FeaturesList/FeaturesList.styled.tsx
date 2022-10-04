@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import {
+  PALETTE,
+  FONTS_SIZES,
+  MEDIA_RULES,
+} from "../../../stylesVariables/variables";
 import { IFeaturesText } from "../../../Interfaces/featuresInterface";
 import { SectionText } from "../../CommonTextStyle.styled";
 
@@ -7,7 +12,7 @@ const FeaturesListStyled = styled.ul`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${MEDIA_RULES.tabletBreakPoint}) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -28,7 +33,7 @@ const FeaturesItemStyled = styled.li`
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: ${MEDIA_RULES.mobileVersionMaxWidth}) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -40,14 +45,14 @@ const FeaturesListContentThumb = styled.div`
 `;
 
 const FeaturesItemTitle = styled.h3`
-  font-weight: 500;
-  font-size: 26px;
+  font-weight: ${FONTS_SIZES.titleFontWeight};
+  font-size: ${FONTS_SIZES.biggerTextFontSize};
   line-height: 1.19;
-  color: #202731;
+  color: ${PALETTE.primaryTextColor};
 `;
 
 const FeaturesItemText = styled(SectionText)<IFeaturesText>`
-  color: rgba(0, 0, 0, 0.5);
+  color: ${PALETTE.accentTextColorLighter};
 
   margin-top: ${(props) => (props.gap ? "23px" : "54px")};
 

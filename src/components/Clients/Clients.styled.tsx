@@ -102,6 +102,11 @@ const ClientsButtonLeft = styled.button`
   height: 50px;
 
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 `;
 
 const ClientsButtonRight = styled(ClientsButtonLeft)`

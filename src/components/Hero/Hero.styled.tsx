@@ -30,7 +30,7 @@ const HeroTextThumb = styled.div`
     width: 350px;
   }
   @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
-    width: 570px;
+    width: 530px;
   }
 `;
 
@@ -53,7 +53,7 @@ const HeroTitle = styled.h1`
   }
 
   @media screen and (min-width: ${MEDIA_RULES.desktopBreakPoint}) {
-    font-size: 66px;
+    font-size: 59px;
   }
 `;
 

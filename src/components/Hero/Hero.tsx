@@ -22,8 +22,8 @@ export const Hero = () => (
             The best tool for user satisfaction research, feedback, market
             research and analytics.
           </HeroDesc>
-          <HeroButton text={"try now"} />
         </HeroTextThumb>
+        <HeroButton text={"try now"} />
         <div>
           <HeroImg src={heroImg} alt={"Work example"} />
         </div>

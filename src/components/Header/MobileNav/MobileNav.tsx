@@ -1,3 +1,4 @@
+import { useOverflow } from "../../../hooks/useOverflow";
 import { Logo } from "../../Logo";
 import { HeaderButton } from "../../Buttons";
 import { ILinks } from "../../../Interfaces/linksInterface";
@@ -14,13 +15,7 @@ import {
 import { useEffect } from "react";
 
 export const MobileNav = ({ setIsMobileMenuOpen }: IMobileNavProps) => {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.body.style.overflow = "visible";
-    };
-  }, []);
+  useOverflow();
 
   const onClickCloseMenu = () => {
     setIsMobileMenuOpen(false);

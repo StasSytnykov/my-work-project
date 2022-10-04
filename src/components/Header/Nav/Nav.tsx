@@ -11,6 +11,8 @@ import {
   NavLink,
 } from "./Nav.styled";
 
+import { useResize } from "../../../hooks/useResize";
+
 export const navItemContent = [
   {
     href: "#features",
@@ -27,43 +29,15 @@ export const navItemContent = [
 ];
 
 export const Nav = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
-
-  useEffect(() => {
-    {
-      if (window.innerWidth > 767) {
-        setIsMobileMenuOpen(false);
-        setIsShowMobileMenu(false);
-      }
-      if (window.innerWidth < 767) {
-        setIsShowMobileMenu(true);
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 767) {
-        setIsMobileMenuOpen(false);
-        setIsShowMobileMenu(false);
-      }
-      if (window.innerWidth < 767) {
-        setIsShowMobileMenu(true);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { isMobileMenuOpen, isShowMobileMenu, onSetIsMobileMenuOpen } =
+    useResize();
 
   const onBurgerClick = () => {
-    setIsMobileMenuOpen(true);
+    onSetIsMobileMenuOpen(true);
   };
 
   const handleClickMobileClose = (isOpen: boolean) => {
-    setIsMobileMenuOpen(isOpen);
+    onSetIsMobileMenuOpen(isOpen);
   };
 
   return (

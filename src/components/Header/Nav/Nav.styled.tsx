@@ -22,6 +22,7 @@ const NavList = styled.ul`
   @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 0;
+    margin-right: 30px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -34,7 +35,13 @@ const NavItem = styled.li`
   line-height: 1.18;
 
   &:not(:last-child) {
-    margin-right: 55px;
+    margin-right: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 55px;
+    }
   }
 `;
 

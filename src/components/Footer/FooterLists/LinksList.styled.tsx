@@ -30,6 +30,13 @@ const LinksListItem = styled.li`
 const Link = styled.a`
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.75);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #03a8b7;
+  }
 `;
 
 const InformationLink = styled(Link)`

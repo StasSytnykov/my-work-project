@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-// const ContactThumb = styled.div``;
-
 const ContactTitle = styled.h4`
   font-weight: 500;
   font-size: 20px;
@@ -21,6 +19,13 @@ const ContactLink = styled.a`
   color: #000000;
 
   margin-bottom: 12px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #03a8b7;
+  }
 `;
 
 const ContactSocialList = styled.ul`
@@ -36,6 +41,13 @@ const ContactSocialItem = styled.li`
 
 const ContactSvg = styled.svg`
   fill: rgba(32, 39, 49, 0.5);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #03a8b7;
+  }
 `;
 
 export {

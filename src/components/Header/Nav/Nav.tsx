@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ILinks } from "../../../Interfaces/linksInterface";
-import { MobileNav } from "../../MobileNav/MobileNav";
+import { MobileNav } from "../MobileNav/MobileNav";
 import { HeaderButton } from "../../Buttons";
 import sprite from "../../../images/sprite.svg";
 import {
@@ -62,6 +62,10 @@ export const Nav = () => {
     setIsMobileMenuOpen(true);
   };
 
+  const handleClickMobileCloseBtn = (isOpen: boolean) => {
+    setIsMobileMenuOpen(isOpen);
+  };
+
   return (
     <NavStyled>
       {!isShowMobileMenu && (
@@ -85,7 +89,9 @@ export const Nav = () => {
         </MobileButton>
       )}
 
-      {isMobileMenuOpen && <MobileNav />}
+      {isMobileMenuOpen && (
+        <MobileNav setIsMobileMenuOpen={handleClickMobileCloseBtn} />
+      )}
     </NavStyled>
   );
 };

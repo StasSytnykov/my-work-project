@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { HeaderButton } from "../Buttons";
-import { ILinks } from "../../Interfaces/linksInterface";
-import { navItemContent } from "../Header/Nav/Nav";
-import sprite from "../../images/sprite.svg";
-import { NavLink } from "../Header/Nav/Nav.styled";
+import { HeaderButton } from "../../Buttons";
+import { ILinks } from "../../../Interfaces/linksInterface";
+import { IMobileNavProps } from "../../../Interfaces/mobileNav";
+import { navItemContent } from "../Nav/Nav";
+import sprite from "../../../images/sprite.svg";
+import { NavLink } from "../Nav/Nav.styled";
 import {
   MobileThumb,
   MobileQuiteButton,
@@ -11,11 +11,9 @@ import {
   MobileNavItem,
 } from "./MobileNav.styled";
 
-export const MobileNav = () => {
-  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(true);
-
+export const MobileNav = ({ setIsMobileMenuOpen }: IMobileNavProps) => {
   const onCloseButtonClick = () => {
-    setMobileMenuIsOpen(false);
+    setIsMobileMenuOpen(false);
   };
 
   return (
